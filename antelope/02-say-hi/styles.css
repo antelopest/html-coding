@@ -1,0 +1,98 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+
+    margin: 240px auto 0;
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-content-header h1 {
+    font-size: 160px;
+    font-weight: 800;
+    margin-bottom: -50px;
+    z-index: 10;
+    position: relative;
+}
+
+.footer-content-contact-info {
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 55%;
+    padding-bottom: 75px;
+    background-color: #1f4954;
+    text-align: left;
+    color: #fff;
+    position: relative;
+}
+
+.footer-content-contact-info-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: green;
+    width: 50%;
+}
+
+.footer-content-contact-info-content-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-content-contact-info h3 {
+    padding: 30px 0;
+    font-size: 58px;
+    font-weight: 800;
+}
+
+.footer-content-contact-info h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-content-contact-info hr {
+    height: 2px;
+    background-color: #fff;;
+    width: 150px;
+    margin: 30px 0;
+    border: none;
+}
+
+.footer-content-contact-info-description {
+    font-size: 16px;
+    padding: 30px 0;
+    width: 420px;
+}
+
+.fullname {
+    font-size: 16px;
+    padding: 30px 0 15px 0;
+    width: 420px;
+    font-weight: 500;
+}
+.address {
+    font-size: 16px;
+    padding: 0 0 30px 0;
+    width: 420px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1700px) {
+    footer {
+      width: 1600px;
+    }
+  }
