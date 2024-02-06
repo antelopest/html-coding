@@ -95,7 +95,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: space-between;
 }
 .about-content-left {
@@ -105,4 +105,33 @@
 .about-content-right {
     flex: 1 1 auto;
     width: 50%;
+}
+.about-content-left h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.about {
+    padding: 20vh 0;
+}
+.about-content-left h1 {
+    font-size: 46px;
+    line-height: 40px;
+    padding: 10px 0;
+}
+.about-content-right p {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+.list-card {
+    display: flex;
+    gap: 40px;
+}
+.card {
+    width: 340px;
+    border: 1px solid rgb(179 160 137/.2);
+    border-color: rgb(179 160 137/.2);
+    border-radius: 3px;
 }
