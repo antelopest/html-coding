@@ -100,8 +100,9 @@
 }
 .about-content-left {
     flex: 1 1 auto;
+    width: 50%;
 }
 .about-content-right {
     flex: 1 1 auto;
-
+    width: 50%;
 }
