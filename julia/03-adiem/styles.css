@@ -32,6 +32,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1001;
 }
 .nav-list {
     list-style: none;
@@ -170,4 +171,48 @@ main {
     left: 50%;
     background-color: black;
     z-index: 10;
+}
+.experience {
+    background-color: rgb(179 160 137/1);
+    padding: 20vh 0;
+    z-index: 9;
+    position: relative;
+}
+.experience-content {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+}
+.experience-content-left {
+    flex: 1 1 auto;
+    width: 50%;
+    padding-right: 30px;
+
+}
+.experience-content-right {
+    flex: 1 1 auto;
+    width: 50%;
+    padding-left: 30px;
+}
+.experience-content-left > h3 {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 20px;
+}
+.experience-content-right > h4 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    line-height: 24px;
+}
+.experience-content-right p {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+}
+.accent {
+    background-color: rgb(177, 157, 131);
 }
