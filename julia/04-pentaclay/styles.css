@@ -295,6 +295,7 @@ body {
     padding: 30px 0;
 }
 .about-content-item {
+    position: relative;
     
 }
 .about-content-item-img {
@@ -307,7 +308,7 @@ body {
     width: 60px;
     height: 60px;
 }
-.about-content-item > h3 {
+.about-content-item > .about-content-item-wrapper > h3 {
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 10px;
@@ -335,4 +336,10 @@ body {
     padding: 30px 20px;
     border: 1px solid #050038;
     border-radius: 12px;
+    min-height: 300px;
+}
+@media only screen and (width <= 1220px) {
+    .about-content-item-wrapper {
+        min-height: auto;
+    }
 }
