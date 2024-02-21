@@ -48,18 +48,51 @@ body {
     }
 }
 .login-card {
-    width: 500px;
-    height: 500px;
-    border: 1px solid red;
+    width: 360px;
 }
 .login-form-input {
     border-radius: 15px;
-    height: 30px;
-    width: 400px;
+    height: 36px;
+    width: 100%;
     border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 300;
 }
-.login-form > p {
-    margin: 10px;
-    font-size: 10px;
-    font-weight: 400;
+.login-form > .control > p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 8px;
+}
+.login-form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.control {
+    padding-bottom: 14px;
+}
+.control > .forgot-password {
+    text-decoration: underline;
+    text-align: right;
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.button {
+    height: 30px;
+    width: 100%;
+}
+.button > .button-login {
+    border: none;
+    background-color: rgb(38, 38, 79);
+    color: white;
+    width: 100%;
+    height: 36px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.button > .button-login:hover {
+    opacity: 0.9;
 }
