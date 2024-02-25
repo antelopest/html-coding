@@ -545,7 +545,10 @@ body {
     border-radius: 8px;
 }
 .questions-content-item {
-    /* border-bottom: 2px solid #050038; */
+    border-bottom: 2px solid #050038;
+}
+.questions-content-item:last-child {
+    border-bottom: none;
 }
 .questions-content-item-header {
     display: flex;
@@ -567,5 +570,11 @@ body {
     font-size: 18px;
 }
 .questions-content-item-main {
-    padding: 16px 24px;
+    height: 0;
+    overflow: hidden;
 }
+
+ .questions-content-list > .active > .questions-content-item-main {
+    height: auto;
+    padding: 16px 24px;
+ }
