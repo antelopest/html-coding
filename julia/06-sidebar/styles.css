@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "PT Sans", sans-serif;
+    box-sizing: border-box;
+}
+.main {
+    width: 100vw;
+    background-color: #1C2022;
+    display: flex;
+    justify-content: flex-start;
+}
+.sidebar {
+    width: 300px;
+    background-color: #0F0F11;
+}
+.profile {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+}
+.container {
+    padding: 0 25px;
+}
+.profile-picture {
+    width: 64px;
+    height: 64px;
+}
+.profile-picture > img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.profile-info-name {
+    color: #ACACAC;
+    font-size: 18px;
+    font-weight: 700;
+}
+.profile-info-position {
+    color: #ACACAC;
+    font-size: 15px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 48px;
+}
+.menu {
+    padding: 20px 0;
+}
+.menu > h3 {
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 8px 0 8px 8px;
+}
+.menu-list {
+    list-style: none;
+}
+.menu-list-item > a {
+    text-decoration: none;
+    padding: 8px 0 8px 0;
+    display: block;
+    color: #AAAAAA;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu-list-item > a:hover {
+    background-color: #17181B;
+}
