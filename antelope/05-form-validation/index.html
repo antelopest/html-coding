@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="form__header">
+                <h3>Get Started Now</h3>
+                <p>Enter your credentials to access your account</p>
+            </div>
+            <div class="form__other_auth">
+                <a class="form__other-auth__button">Log in with Google</a>
+                <a class="form__other-auth__button">Log in with Apple</a>
+            </div>
+            <div class="form__separator">
+                <hr class="form__separator--line">
+            </div>
+            <form class="form__container">
+                <div class="row">
+                    <div class="control">
+                        <p class="control__label">Username</p>
+                        <input class="control__input"
+                               type="text"
+                               placeholder="Username" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control">
+                        <p class="control__label">Email</p>
+                        <input class="control__input"
+                               type="email"
+                               placeholder="Email" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control">
+                        <p class="control__label">Password</p>
+                        <input class="control__input"
+                               type="password"
+                               placeholder="Password" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control">
+                        <p class="control__label">Confirm password</p>
+                        <input class="control__input"
+                               type="password"
+                               placeholder="Confirm password" />
+                    </div>
+                </div>
+            </form>
+            <div class="action">
+                <button type="button" class="button button__primary">Sign up</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
