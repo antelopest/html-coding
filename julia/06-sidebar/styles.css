@@ -64,12 +64,21 @@
 }
 .menu-list-item > a {
     text-decoration: none;
-    padding: 8px 0 8px 0;
+    padding: 8px 0 8px 8px;
     display: block;
     color: #AAAAAA;
     font-size: 14px;
     cursor: pointer;
 }
-.menu-list-item > a:hover {
+.menu-list-item:hover {
     background-color: #17181B;
+}
+.menu-list-item {
+    display: flex;
+    align-items: center;
+}
+.menu-list-item > ion-icon {
+    font-size: 20px;
+    color: #AAAAAA;
+    padding-left: 8px;
 }
