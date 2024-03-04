@@ -82,3 +82,12 @@
     color: #AAAAAA;
     padding-left: 8px;
 }
+.action {
+    padding: 30px 0;
+}
+.button-menu {
+    height: 32px;
+    width: 32px;
+    background-image: url(arrow.svg);
+    background-position: center;
+}
