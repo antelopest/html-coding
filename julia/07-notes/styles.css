@@ -49,7 +49,6 @@ body {
     font-size: 14px;
 }
 .notes {
-    height: 400px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
@@ -58,3 +57,59 @@ body {
     background-color: #FFFFFF;
     border-radius: 10px;
 }
+.filter {
+    padding: 15px;
+}
+.title {
+    font-size: 17px;
+    font-weight: 700;
+}
+.tags {
+    padding: 15px 0;
+}
+.tag {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 5px 10px;
+    background-color: #91AAEE;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.articles {
+    padding: 15px;
+}
+.count {
+    font-size: 15px;
+    font-weight: 700;
+    color: #91AAEE;
+    padding: 15px 0;
+}
+.articles-list-item {
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+}
+.articles-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.article-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align:left;
+    padding: 5px 0;
+}
+.article-description {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 0;
+}
+.article-data {
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: right;
+}
+
