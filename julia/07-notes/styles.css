@@ -53,7 +53,6 @@ body {
     border-radius: 10px;
 }
 .note {
-    height: 400px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
@@ -112,4 +111,22 @@ body {
     padding: 5px 0;
     text-align: right;
 }
+.note {
+    padding: 15px;
+}
+.note-title {
+    font-size: 17px;
+    font-weight: 700;
+}
+.note-date {
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: left;
+}
+.note-description {
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 0;
+}
+
 
