@@ -17,7 +17,10 @@
 <body>
     <div class="card">
         <div class="header">Today</div>
-        <ul class="list">
+        <div class="list-empty visible" id="list-empty">
+            The list is empty.
+        </div>
+        <ul class="list" id="list">
             <li class="item">
                 <div class="status">
                     <span class="material-symbols-outlined">
@@ -59,8 +62,8 @@
             </li>
         </ul>
         <div class="form">
-            <textarea placeholder="New Todo"></textarea>
-            <button type="button">Add todo</button>
+            <textarea id="textItem" placeholder="New Todo"></textarea>
+            <button id="addItem" type="button" onclick="addItem()">Add todo</button>
         </div>
     </div>
     <script src="script.js"></script>

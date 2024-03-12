@@ -25,11 +25,10 @@ body {
 .header {
     font-size: 20px;
     font-weight: 700;
-    padding: 15px 0 0 0;
+    padding: 15px 0 30px 0;
 }
 .list {
     list-style-type: none;
-    padding: 30px 0;
 }
 .item {
     font-size: 14px;
@@ -70,4 +69,16 @@ button {
     padding: 5px 15px;
     border: none;
     font-family: "PT Sans", sans-serif;
+}
+
+.form {
+    padding: 30px 0 15px 0;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.done .text {
+    text-decoration-line: line-through;
 }
