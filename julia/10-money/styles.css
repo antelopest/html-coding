@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "PT Sans", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    height: 550px;
+    width: 400px;
+    border: 2px solid #5D5D5D;
+    border-radius: 25px;
+    padding: 20px;
+}
+.flag {
+    border: 50%;
+    height: 32px;
+    width: 32px;
+}
+.flag > img {
+    object-fit: cover;
+    height: 32px;
+    width: 32px;
+}
+.name {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.input-currency {
+    display: flex;
+    flex-direction: column;
+}
+.selected-currency {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.currency {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+.button-choose-currency {
+    border: 2px solid #FEED4A;
+    border-radius: 15px;
+    background-color: black;
+    padding: 5px 15px;
+    color: white;
+}
+.input-number {
+    padding: 10px 0;
+}
+.input-value {
+    background-color: #2E2E2E;
+    border: none;
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+}
+.correlation-between-currency {
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.output-currency {
+    padding: 10px 0;
+}
+.output-value {
+    background-color: #2E2E2E;
+    border: none;
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+}
+.swap-action {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-swap {
+    border: 2px solid #FEED4A;
+    border-radius: 50%;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+}
+.button-swap > img {
+    fill: #FEED4A;
+    background: orange;
+}
+
+
+.current-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.date {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+
+}
+.choose-date {
+    background-color: #FEED4A;
+    padding: 10px 10px;
+    border-radius: 25px;
+}
