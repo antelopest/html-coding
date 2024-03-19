@@ -14,14 +14,13 @@ body {
     align-items: center;
 }
 .card {
-    height: 550px;
     width: 400px;
     border: 2px solid #5D5D5D;
     border-radius: 25px;
     padding: 20px;
 }
 .flag {
-    border: 50%;
+    border-radius: 50%;
     height: 32px;
     width: 32px;
 }
@@ -90,7 +89,7 @@ body {
     font-size: 18px;
 }
 .swap-action {
-    padding: 15px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,10 +100,11 @@ body {
     background-color: black;
     height: 50px;
     width: 50px;
-}
-.button-swap > img {
-    fill: #FEED4A;
-    background: orange;
+    background-image: url(swap.svg);
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -113,7 +113,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-
+    padding: 10px 0;
 }
 .date {
     color: white;
