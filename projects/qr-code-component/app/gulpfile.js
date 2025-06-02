@@ -1,18 +1,13 @@
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
-const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
 function compileSCSS() {
-    return src('src/scss/**/*.scss')
+    return src('src/styles/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            cascade: false,
-            grid: true
-        }))
         .pipe(cleanCSS())
-        .pipe(dest('dist/css'))
+        .pipe(dest('dist/styles'))
         .pipe(browserSync.stream());
 }
 
