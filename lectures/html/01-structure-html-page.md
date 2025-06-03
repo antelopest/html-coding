@@ -1,0 +1,72 @@
+# HTML страница
+
+## Структура HTML страницы
+
+### Базовая структура HTML страницы
+
+```
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Название страницы</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <!-- Меню, логотип, навигация -->
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <!-- Основной контент -->
+    </section>
+    <article>
+      <!-- Статья или пост блога -->
+    </article>
+    <aside>
+      <!-- Боковая панель (ссылки, реклама, теги и т.д.) -->
+    </aside>
+  </main>
+
+  <footer>
+    <!-- Контакты, копирайт, ссылки -->
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+```
+
+### Описание структуры HTML страницы
+
+`<!DOCTYPE html>` - указывает браузеру, что документ HTML5.
+
+`<html lang="ru"></html>` - обертка всего HTML документа, `lang="ru"` - атрибут lang играет важную роль для доступности,
+SEO и корректного отображения текста.
+
+#### Атрибут `lang`
+
+Атрибут `lang` влияет на доступность (accessibility), SEO (поисковая оптимизация), браузеры и переподчики.
+
+- Доступность (accessibility)
+  - Экранные читалки (screen readers) используют `lang`, чтобы:
+    - выбрать правильную озвучку/голос (например, русский, английский, французский, немецкий)
+    - правильно читать ударения, паузы, буквы и цифры
+  - Без `lang`, читалка может озвучивать русские слова с английским акцентом, для слушителя может получится непонятно.
+- SEO (поисковая оптимизация)
+- Браузеры и переводчики
+
+# Семантические теги:
+header, nav, main, section, article, aside, footer
+
+# Формы:
+input, label, textarea, select, fieldset
+
+Теги доступности:
+aria-*, role, tabindex
