@@ -4,7 +4,7 @@
 
 ### Базовая структура HTML страницы
 
-```
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -130,9 +130,3 @@ SEO и корректного отображения текста.
 - `<footer></footer>` - низ сайта: контакты, соцсети, копирайт
 
 ---
-
-# Формы:
-input, label, textarea, select, fieldset
-
-Теги доступности:
-aria-*, role, tabindex
