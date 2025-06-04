@@ -49,3 +49,28 @@
 | aria-labelledby   | Заголовок, читаемым первым        |
 | aria-describedby  | Описание, читаемое вторым         |
 
+**Вкладки**
+
+````html
+<div role="tablist">
+  <button role="tab" aria-selected="true" aria-controls="panel1" id="tab1">Вкладка 1</button>
+  <button role="tab" aria-selected="false" aria-controls="panel2" id="tab2">Вкладка 2</button>
+</div>
+
+<div role="tabpanel" id="panel1" aria-labelledby="tab1">Контент 1</div>
+<div role="tabpanel" id="panel2" aria-labelledby="tab2" hidden>Контент 2</div>
+````
+
+## Важно ##
+* Не стоит использовать ARIA, если можно использовать семантический HTML
+
+````html
+<!-- лучше -->
+<button>OK</button>
+<!-- хуже -->
+<div role="button" tabindex="0">OK</div>
+````
+
+* Не путай **aria-label** и **aria-labelledby**
+  * **aria-label** - прямой текст
+  * **aria-labelledby="id"** - ссылается на элемент с текстом
