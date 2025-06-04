@@ -1,5 +1,9 @@
 # HTML страница
 
+## HTML - Hyper Text Markup Language ##
+
+*Tim Berners-Lee created first version of HTML.*
+
 ## Структура HTML страницы
 
 ### Базовая структура HTML страницы
