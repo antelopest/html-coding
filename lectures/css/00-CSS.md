@@ -5,7 +5,7 @@
 Список тем:
 
 1. [Синтаксис и селекторы](01.%20Syntax%20and%20selectors.md)
-2. Каскадность, наследование, специфичность
+2. [Каскадность, наследование и специфичность](02.%20Cascade,%20inheritance,%20specificity.md)
 3. Блочная модель: margin, padding, border, box-sizing
 4. Типы позиционирования: static, relative, absolute, fixed, sticky
 5. Работа со шрифтами и текстом
