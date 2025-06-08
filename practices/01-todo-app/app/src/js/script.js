@@ -1,1 +1,6 @@
-console.log('Clear template');
+'use strict';
+
+const Status = Object.freeze({
+  NotCompleted: 'NotCompleted',
+  Completed: 'Completed'
+});

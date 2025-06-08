@@ -15,51 +15,44 @@ const browserSync = browserSyncLib.create();
 
 // HTML
 function copyHTML() {
-    return src('src/index.html')
-        .pipe(dest('dist'))
-        .pipe(browserSync.stream());
+  return src('src/index.html').pipe(dest('dist')).pipe(browserSync.stream());
 }
 
 // SCSS -> CSS
 function compileSCSS() {
-    return src('src/scss/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(compileSass().on('error', compileSass.logError))
-        .pipe(autoprefixer({ cascade: false }))
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest('dist/css'))
-        .pipe(browserSync.stream());
+  return src('src/scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(compileSass().on('error', compileSass.logError))
+    .pipe(autoprefixer({ cascade: false }))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write('.'))
+    .pipe(dest('dist/css'))
+    .pipe(browserSync.stream());
 }
 
 // JS
 function scripts() {
-    return src('src/js/**/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest('dist/js'))
-        .pipe(browserSync.stream());
+  return src('src/js/**/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
+    .pipe(dest('dist/js'))
+    .pipe(browserSync.stream());
 }
 
 // Images
 function images() {
-    return src('src/img/**/*')
-        .pipe(imagemin())
-        .pipe(dest('dist/img'));
+  return src('src/img/**/*').pipe(imagemin()).pipe(dest('dist/img'));
 }
 
 // Watcher
 function serve() {
-    browserSync.init({ server: { baseDir: 'dist' } });
+  browserSync.init({ server: { baseDir: 'dist' } });
 
-    watch('src/index.html', copyHTML);
-    watch('src/scss/**/*.scss', compileSCSS);
-    watch('src/js/**/*.js', scripts);
-    watch('src/img/**/*', images);
+  watch('src/index.html', copyHTML);
+  watch('src/scss/**/*.scss', compileSCSS);
+  watch('src/js/**/*.js', scripts);
+  watch('src/img/**/*', images);
 }
 
-export default series(
-    parallel(copyHTML, compileSCSS, scripts, images),
-    serve
-);
+export default series(parallel(copyHTML, compileSCSS, scripts, images), serve);
