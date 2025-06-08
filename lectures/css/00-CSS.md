@@ -11,8 +11,9 @@
 5. [Свойство display и виды отображения](05.%20Property%20display%20and%20display%20types.md)
 6. [Работа со шрифтами и текстом](06.%20Fonts,%20text.md)
 7. [Фон, изображения, градиенты](07.%20Background,%20image,%20gradient.md)
-8. [Адаптивность: media queries, мобильная верстка](09.%20Adaptivities%20(media%20queries,%20mobile%20layout).md)
-9. [Анимации и переходы](10.%20Animation,%20transitions.md)[Анимации и переходы](10.%20Animation,%20transitions.md)
-10. [Flexbox и Grid](08.%20Flexbox,%20Grid.md)
-11. [Переменные в CSS](11.%20Variables%20in%20CSS.md)
+8. [Рамки, тени, декоративные эффекты в CSS]()
+9. [Адаптивность: media queries, мобильная верстка](09.%20Adaptivities%20(media%20queries,%20mobile%20layout).md)
+10. [Анимации и переходы](10.%20Animation,%20transitions.md)[Анимации и переходы](10.%20Animation,%20transitions.md)
+11. [Flexbox и Grid](08.%20Flexbox,%20Grid.md)
+12. [Переменные в CSS](11.%20Variables%20in%20CSS.md)
 
