@@ -10,19 +10,20 @@
   <body>
     <div class="container">
       <header>
-        <h1>To-Do List</h1>
+        <h1>Your To-Do</h1>
       </header>
 
-      <form id="id">
+      <form id="todo-form">
         <input
           type="text"
-          name="text"
           id="todo-input"
-          placeholder="Text task"
+          placeholder="Add new task"
           required
         />
-        <button type="submit">Добавить</button>
+        <button type="submit">+</button>
       </form>
+
+      <ul id="todo-list"></ul>
     </div>
 
     <script src="js/script.js"></script>
