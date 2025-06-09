@@ -9,21 +9,27 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Your To-Do</h1>
-      </header>
+      <aside class="sidebar">
+        <header>
+          <h2>Menu</h2>
+          <button>Закрыть</button>
+          <button>Открыть</button>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#">Today</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-      <form id="todo-form">
-        <input
-          type="text"
-          id="todo-input"
-          placeholder="Add new task"
-          required
-        />
-        <button type="submit">+</button>
-      </form>
-
-      <ul id="todo-list"></ul>
+      <main class="main-content">
+        <h1>Добро пожаловать!</h1>
+        <p>Это пример страницы с боковой навигацией.</p>
+      </main>
     </div>
 
     <script src="js/script.js"></script>
