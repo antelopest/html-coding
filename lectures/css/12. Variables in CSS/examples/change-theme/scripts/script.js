@@ -45,9 +45,7 @@ button.addEventListener("click", function () {
     currentTheme.name === themes.light.name ? themes.dark : themes.light;
 
   /* Remove Body Classes */
-  document.body.classList.remove(
-    ...[themes.dark.cssClass, themes.light.cssClass],
-  );
+  document.body.classList.remove(themes.dark.cssClass, themes.light.cssClass);
 
   /* Set Body Class */
   document.body.classList.add(currentTheme.cssClass);
