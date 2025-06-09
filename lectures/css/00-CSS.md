@@ -14,5 +14,5 @@
 8. [Рамки, тени, декоративные эффекты в CSS](08.%20Border,%20border-shadow,%20text-shadow.md)
 9. [Адаптивность: media queries, мобильная верстка](09.%20Adaptivities%20(media%20queries,%20mobile%20layout).md)
 10. [Анимации и переходы](10.%20Animation,%20transitions.md)
-11. [Flexbox и Grid](11.%20Flexbox,%20Grid.md)
+11. [Flexbox и Grid](11.%20Frexbox,%20Grid/11.%20Flexbox,%20Grid.md)
 12. [Переменные в CSS](12.%20Variables%20in%20CSS/12.%20Variables%20in%20CSS.md)
