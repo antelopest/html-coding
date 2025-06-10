@@ -7,12 +7,33 @@
 body {
   font-family: sans-serif;
   padding: 2rem;
-  background: #f7f7f7;
+  background: #f9f9f9;
 }
 
 .title {
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   margin-bottom: 2rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.filters button:hover {
+  background: #aaa;
+  color: white;
 }
 
 .gallery {
@@ -26,6 +47,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background: white;
+  transition: transform 0.3s;
 }
 
 .item img {
@@ -38,4 +60,8 @@ body {
 
 .item:hover img {
   transform: scale(1.05);
+}
+
+.item.hidden {
+  display: none;
 }
