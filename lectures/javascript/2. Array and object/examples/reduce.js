@@ -70,6 +70,6 @@ const groupedByRole = users.reduce((acc, user) => {
   acc[user.role.name].push(user);
 
   return acc;
-}, []);
+}, {});
 
 console.log(groupedByRole);

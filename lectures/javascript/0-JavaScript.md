@@ -21,7 +21,7 @@
 **DOM** (Document Object Model) - это структура HTML-документа, которую JavaScript может чиать и изменять.
 Каждый HTML-элемент становится объектом, к котором можно обратиться, изменить его содержимое, стили, классы и т.д.
 
-1. [Поиск HTML элемента (querySelector, getElementById)](3.%20DOM/3.1.%20Search%20HTML%20element.md)
+1. [Поиск HTML элемента](3.%20DOM/3.1.%20Search%20HTML%20element.md)
 2. Изменение HTML элемента (classList, innerHTML, textContext)
 2. document.querySelector, getElementById, classList, innerHTML, textContent
 2. Создание и удаление элементов (createElement, append, remove)
