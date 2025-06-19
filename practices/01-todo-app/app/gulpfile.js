@@ -1,16 +1,19 @@
 import gulp from 'gulp';
+
 const { src, dest, watch, series, parallel } = gulp;
 
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 import * as sass from 'sass';
 import gulpSass from 'gulp-sass';
+
 const compileSass = gulpSass(sass);
 
 import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
 import sourcemaps from 'gulp-sourcemaps';
 import browserSyncLib from 'browser-sync';
+
 const browserSync = browserSyncLib.create();
 
 // HTML
