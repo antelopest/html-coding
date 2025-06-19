@@ -2,11 +2,22 @@
 
 $sidebar-width: 280px;
 $sidebar-padding: 20px 30px;
+$sidebar-navigation-padding: 0 30px;
+$sidebar-projects-padding: 0 30px;
+$sidebar-navigation-menu-item-padding: 15px 20px;
+$sidebar-navigation-menu-item-gap: 15px;
+$sidebar-navigation-menu-item-border-color: #fff;
+$sidebar-navigation-menu-item-border-color-active: #00182f;
+$sidebar-navigation-menu-item-color: #000;
+$sidebar-navigation-menu-item-color-active: #fff;
+$sidebar-navigation-menu-item-background-color: #fff;
+$sidebar-navigation-menu-item-background-color-active: #00182f;
 $sidebar-gap: 10px;
 $sidebar-logo-icon-color: #000;
 $sidebar-logo-icon-width: 26px;
 $sidebar-logo-icon-height: 26px;
 $sidebar-border-color: #e5e5e5;
+$sidebar-letter-spacing: 0.5px;
 
 .sidebar {
   display: flex;
@@ -15,7 +26,6 @@ $sidebar-border-color: #e5e5e5;
   justify-content: start;
 
   width: $sidebar-width;
-
   border-right: 1px solid #e5e5e5;
 
   .header {
@@ -84,127 +94,105 @@ $sidebar-border-color: #e5e5e5;
       }
     }
   }
-}
 
-.navigation {
-  width: $sidebar-width;
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: $sidebar-width;
+    padding: $sidebar-navigation-padding;
+  }
 
-  padding: 0 30px;
 
-  .menu {
-    list-style: none;
-    width: 100%;
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 
-    .menu-item {
-      text-decoration: none;
+    padding: $sidebar-projects-padding;
+    width: $sidebar-width;
 
+    .title {
+      padding: 15px 0;
+      width: 100%;
+
+      font-size: $font-size-14;
+      font-weight: $font-weight-600;
+    }
+
+    .button-add-project {
       display: flex;
-      align-items: center;
+      flex-direction: row;
       justify-content: start;
-      gap: 20px;
+      align-items: center;
 
-      padding: 15px 20px;
+      gap: $sidebar-gap;
+
+      border: 1px solid $sidebar-navigation-menu-item-border-color;
+      background-color: $background-color-main;
+
+      width: 100%;
+
+      padding: 15px 0;
 
       cursor: pointer;
 
-      color: $font-color-main;
-      letter-spacing: 0.5px;
+      font-family: $font-family-main;
       font-size: $font-size-14;
       font-weight: $font-weight-400;
       font-style: $font-style-normal;
-
-      border: 1px solid white;
-
-      &.active {
-        background-color: #00182F;
-        color: white;
-        border: 1px solid #3d3d3d;
-      }
+      letter-spacing: $sidebar-letter-spacing;
 
       &:hover {
-        //background-color: #3d3d3d;
-        //color: white;
+        font-weight: $font-weight-500;
+      }
 
-        border: 1px solid #3d3d3d;
-
+      svg {
+        height: 20px;
+        width: 20px;
+        color: black;
       }
     }
   }
 }
 
-.projects {
-  padding: 20px 30px;
+.menu {
+  list-style: none;
   width: 100%;
 
-  width: $sidebar-width;
+  .menu-item {
+    text-decoration: none;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 
-  .title {
-    padding: 15px 0;
-    width: 100%;
+    gap: $sidebar-navigation-menu-item-gap;
+    padding: $sidebar-navigation-menu-item-padding;
 
-    font-size: $font-size-normal;
-    font-weight: $font-weight-600;
-  }
+    cursor: pointer;
 
-  .menu {
-    list-style: none;
-    width: 100%;
-
-    .menu-item {
-      text-decoration: none;
-
-      display: block;
-      padding: 15px 20px;
-
-      cursor: pointer;
-
-      color: $font-color-main;
-      letter-spacing: 0.5px;
-      font-size: $font-size-14;
-      font-weight: $font-weight-400;
-      font-style: $font-style-normal;
-
-      &.active {
-        background-color: #00182F;
-        color: white;
-      }
-
-      &:hover {
-        background-color: #3d3d3d;
-        color: white;
-      }
-    }
-  }
-
-  .button-add-project {
-    margin: 0 20px;
-    width: 100%;
-    outline: none;
-    text-align: start;
-    padding: 15px 20px;
+    color: $font-color-main;
 
     font-size: $font-size-14;
     font-weight: $font-weight-400;
     font-style: $font-style-normal;
 
-    background-color: $background-color-main;
+    letter-spacing: $sidebar-letter-spacing;
 
-    border: 2px solid white;
+    border: 1px solid $sidebar-navigation-menu-item-border-color;
 
-    cursor: pointer;
+    &.active {
+      background-color: $sidebar-navigation-menu-item-background-color-active;
+      color: $sidebar-navigation-menu-item-color-active;
+      border: 1px solid $sidebar-navigation-menu-item-border-color-active;
+    }
 
     &:hover {
-      border: 1px solid #00182f;
+      border: 1px solid $sidebar-navigation-menu-item-border-color-active;
     }
   }
 }
