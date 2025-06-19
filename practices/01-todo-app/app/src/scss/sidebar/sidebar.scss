@@ -105,7 +105,6 @@ $sidebar-letter-spacing: 0.5px;
     padding: $sidebar-navigation-padding;
   }
 
-
   .projects {
     display: flex;
     flex-direction: column;
@@ -123,7 +122,7 @@ $sidebar-letter-spacing: 0.5px;
       font-weight: $font-weight-600;
     }
 
-    .button-add-project {
+    .btn-new-project {
       display: flex;
       flex-direction: row;
       justify-content: start;
@@ -156,6 +155,54 @@ $sidebar-letter-spacing: 0.5px;
         color: black;
       }
     }
+  }
+
+  .actions {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    width: $sidebar-width;
+    padding: $sidebar-padding;
+
+    border-top: 1px solid $border-color;
+
+    .btn-logout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: $sidebar-gap;
+
+        border: 1px solid $sidebar-navigation-menu-item-border-color;
+        background-color: $background-color-main;
+
+        width: 100%;
+
+        padding: 15px 0;
+
+        cursor: pointer;
+
+        font-family: $font-family-main;
+        font-size: $font-size-14;
+        font-weight: $font-weight-400;
+        font-style: $font-style-normal;
+        letter-spacing: $sidebar-letter-spacing;
+
+        &:hover {
+          font-weight: $font-weight-500;
+        }
+
+        svg {
+          height: 20px;
+          width: 20px;
+          color: black;
+        }
+      }
   }
 }
 
