@@ -1,5 +1,7 @@
 import './styles/main.scss';
 
+import Routes from './scripts/routes/routes.js';
+
 // import Home from './views/home.js';
 // import About from './views/about.js';
 // import NotFound from './views/notfound.js';

@@ -3,10 +3,10 @@ const routes = {
 };
 
 const render = async () => {
+  console.log('123');
+
   const path = location.pathname;
-  console.log(path);
   const view = routes[path] || '/views/today.html';
-  console.log(view);
 
   const res = await fetch(view);
   const html = await res.text();
