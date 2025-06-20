@@ -1,4 +1,4 @@
-@import '../variables/variables';
+@use '../variables/variables' as *;
 
 $sidebar-width: 280px;
 $sidebar-padding: 20px 30px;
@@ -171,38 +171,38 @@ $sidebar-letter-spacing: 0.5px;
     border-top: 1px solid $border-color;
 
     .btn-logout {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
 
-        gap: $sidebar-gap;
+      gap: $sidebar-gap;
 
-        border: 1px solid $sidebar-navigation-menu-item-border-color;
-        background-color: $background-color-main;
+      border: 1px solid $sidebar-navigation-menu-item-border-color;
+      background-color: $background-color-main;
 
-        width: 100%;
+      width: 100%;
 
-        padding: 15px 0;
+      padding: 15px 0;
 
-        cursor: pointer;
+      cursor: pointer;
 
-        font-family: $font-family-main;
-        font-size: $font-size-14;
-        font-weight: $font-weight-400;
-        font-style: $font-style-normal;
-        letter-spacing: $sidebar-letter-spacing;
+      font-family: $font-family-main;
+      font-size: $font-size-14;
+      font-weight: $font-weight-400;
+      font-style: $font-style-normal;
+      letter-spacing: $sidebar-letter-spacing;
 
-        &:hover {
-          font-weight: $font-weight-500;
-        }
-
-        svg {
-          height: 20px;
-          width: 20px;
-          color: black;
-        }
+      &:hover {
+        font-weight: $font-weight-500;
       }
+
+      svg {
+        height: 20px;
+        width: 20px;
+        color: black;
+      }
+    }
   }
 }
 

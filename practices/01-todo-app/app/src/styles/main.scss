@@ -1,6 +1,6 @@
-@import "fonts/fonts";
-@import "variables/variables";
-@import "sidebar/sidebar";
+@use './shared/fonts/fonts';
+@use './shared/variables/variables' as *;
+@use './shared/sidebar/sidebar';
 
 * {
   box-sizing: border-box;
