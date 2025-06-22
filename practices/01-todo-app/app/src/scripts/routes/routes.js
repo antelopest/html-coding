@@ -48,3 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   render();
 });
+
+window.addEventListener('load', () => {
+  navigateTo('#/today');
+});
