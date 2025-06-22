@@ -28,7 +28,7 @@
 3. Работа с атрибутами (setAttribute, dataset)
 4. Навешивание событий (addEventListener, делегирование)
 5. Работа с формами (input, submit, change)
-
+6. DOM Events
 ## Дополнительные темы: ##
 
 * Замыкания
